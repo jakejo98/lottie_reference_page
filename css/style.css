@@ -1,3 +1,7 @@
-.container{display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 100px 0;}
-.motion_container {display: flex; justify-content: center; align-items: center; width: 1000px;}
-.motion_container + .motion_container{margin-top:50px;}
+.blind{text-indent:-9999px;opacity:0;display:none;visibility:hidden;width:0;height:0;font-size:0;top:-9999px;}
+.container{width:1200px; display: flex; justify-content: center; align-items:baseline; margin: 100px auto; flex-wrap: wrap;}
+.contents_title::before{width:3px;height:16px;background-color:#333;display:block;content:"";position:absolute;left:0;top:2px;}
+.contents_title{position:relative;font-size:20px;font-weight:bold;color:#333;line-height:20px;padding-left:13px;margin-bottom:16px;}
+.contents_wrap{width:calc(50% - 50px);}
+.contents_wrap:nth-of-type(2n){margin-left:100px;}
+.contents_wrap:nth-of-type(n+3){margin-top:50px;}
