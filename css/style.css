@@ -1,2 +1,2 @@
-.container{display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 100px 0;}
+.container{display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 100px 0; height: calc(100vh - 200px); overflow-y: scroll;}
 .motion_container {display: flex; justify-content: center; align-items: center; width: 500px;}
